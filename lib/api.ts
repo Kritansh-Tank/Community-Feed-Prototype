@@ -1,11 +1,16 @@
 import axios from 'axios';
 
+const normalizeApiUrl = (url: string) => {
+  const trimmed = url.replace(/\/$/, '');
+  return trimmed.endsWith('/api') ? trimmed : `${trimmed}/api`;
+};
+
 const getApiUrl = () => {
   // Use environment variable if set (production)
   if (process.env.NEXT_PUBLIC_API_URL) {
-    return process.env.NEXT_PUBLIC_API_URL;
+    return normalizeApiUrl(process.env.NEXT_PUBLIC_API_URL);
   }
-  
+
   if (typeof window === 'undefined') {
     // Server-side: use localhost
     return 'http://localhost:8000/api';
