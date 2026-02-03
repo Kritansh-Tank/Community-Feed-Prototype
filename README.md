@@ -52,7 +52,7 @@ The app will be available at `http://localhost:3000`.
 
 [Backend](https://community-feed-api.onrender.com)
 
-### Note
+## Note
 This project’s backend is hosted on Render (Free Tier), which automatically spins down services after periods of inactivity.
 
 If you see a loader on the Feed or Leaderboard pages, it means the backend is temporarily inactive — this is not an issue with the application code.
