@@ -43,3 +43,13 @@ The app will be available at `http://localhost:3000`.
 - **N+1 Avoidance:** Comment trees are built in-memory after a single flat fetch.
 - **Dynamic Aggregation:** Karma is calculated on-the-fly using correlated subqueries for maximum data integrity.
 - **Atomic Likes:** `get_or_create` combined with `UniqueConstraint` ensures concurrency safety.
+
+## User Interface
+![Community Feed Prototype](assets/Community_Feed_Prototype.png)
+
+### Live Demo
+[Community Feed Prototype](https://community-feed-prototype-eight.vercel.app/)
+
+## License
+
+MIT License - See LICENSE file for details
