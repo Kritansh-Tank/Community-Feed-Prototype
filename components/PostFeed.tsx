@@ -5,8 +5,18 @@ import { getPosts } from '@/lib/api';
 import { PostCard } from './PostCard';
 import { Loader2 } from 'lucide-react';
 
+interface Post {
+  id: number;
+  text: string;
+  author: { username: string };
+  created_at: string;
+  like_count: number;
+  comment_count: number;
+  is_liked: boolean;
+}
+
 export function PostFeed({ refreshKey, user }: { refreshKey?: number; user?: any }) {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,7 +44,7 @@ export function PostFeed({ refreshKey, user }: { refreshKey?: number; user?: any
   }
 
   const handleDelete = (id: number) => {
-    setPosts((prev: any) => prev.filter((p: any) => p.id !== id));
+    setPosts((prev) => prev.filter((p) => p.id !== id));
   };
 
   return (
