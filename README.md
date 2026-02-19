@@ -52,16 +52,6 @@ The app will be available at `http://localhost:3000`.
 
 [Backend](https://community-feed-api.onrender.com)
 
-## Note
-This project’s backend is hosted on Render (Free Tier), which automatically spins down services after periods of inactivity.
-
-If you see a loader on the Feed or Leaderboard pages, it means the backend is temporarily inactive — this is not an issue with the application code.
-
-The backend may take up to 30 minutes or more to fully start after being idle.
-
-Backend URL is provided in the repository.
-Kindly open the backend URL once to wake the service before testing the application.
-
 ## License
 
 MIT License - See LICENSE file for details
