@@ -47,11 +47,6 @@ The app will be available at `http://localhost:3000`.
 ## User Interface
 ![Community Feed Prototype](assets/Community_Feed_Prototype.png)
 
-### Live Demo
-[Frontend](https://community-feed-prototype-eight.vercel.app/)
-
-[Backend](https://community-feed-api.onrender.com)
-
 ## License
 
 MIT License - See LICENSE file for details
